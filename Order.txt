@@ -1,0 +1,20 @@
+	Welcome to Coffee and Cafe shop 
+	Created By::  Gopika Kalathiya 
+			    Ramandeep Kaur 
+			Your Order::
+Date:: 2022-08-08T18:55:05.661711900
+		Item				Qty			Price
+Bagel:: 
+None		1.0			$1.5
+Toppings: 
+Cream Cheese ($0.50)
+Butter ($0.25)
+									$0.0
+Coffee:: 
+None			1.0			$1.75
+---------------------------------------------------
+SubTotal:: 							$0.0
+HST (13%) 							$0.0
+Total::								$0.0
+	Thank you for shopping with Us
+

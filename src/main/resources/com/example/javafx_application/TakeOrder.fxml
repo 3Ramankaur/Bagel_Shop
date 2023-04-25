@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="calcButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_application.TakeOrderController">
+   <children>
+      <Label layoutX="55.0" layoutY="46.0" text="Pick a Bagel:" textFill="#2810e0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="noneRadioButton" layoutX="51.0" layoutY="101.0" mnemonicParsing="false" selected="true" text="None">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="group1" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="whiteRadioButton" layoutX="51.0" layoutY="157.0" mnemonicParsing="false" text="White ( $1.25)" toggleGroup="$group1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="wheatRadioButton" layoutX="51.0" layoutY="215.0" mnemonicParsing="false" text="Whole Wheat ($1.50)" toggleGroup="$group1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="279.0" layoutY="101.0" text="Quantity:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="whiteTextField" layoutX="263.0" layoutY="151.0" onKeyPressed="#onKey" prefHeight="25.0" prefWidth="105.0" text="0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="wheatTextField" layoutX="263.0" layoutY="209.0" onKeyPressed="#onKey" prefHeight="25.0" prefWidth="105.0" text="0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="55.0" layoutY="305.0" text="Pick Your Toppings:" textFill="#2810e0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="cheeseCheckBox" layoutX="55.0" layoutY="347.0" mnemonicParsing="false" text="Cream Cheese ($0.50)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="butterCheckBox" layoutX="55.0" layoutY="383.0" mnemonicParsing="false" text="Butter ($0.25)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="blueberryCheckBox" layoutX="55.0" layoutY="419.0" mnemonicParsing="false" text="Blueberry Jam ($0.75)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="raspberryCheckBox" layoutX="55.0" layoutY="457.0" mnemonicParsing="false" text="Raspberry Jam ($0.75)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="peachCheckBox" layoutX="55.0" layoutY="495.0" mnemonicParsing="false" text="Peach Jelly ($0.75)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <Separator layoutX="20.0" layoutY="293.0" prefHeight="0.0" prefWidth="734.0" />
+      <Separator layoutX="384.0" layoutY="39.0" orientation="VERTICAL" prefHeight="489.0" prefWidth="7.0" />
+      <Label layoutX="426.0" layoutY="46.0" text="Want Coffe with that?" textFill="#2810e0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="noneRadio" layoutX="404.0" layoutY="88.0" mnemonicParsing="false" selected="true" text="None">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="group2" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="regularRadioButton" layoutX="404.0" layoutY="128.0" mnemonicParsing="false" text="Regular ( $1.25)" toggleGroup="$group2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="capRadioButton" layoutX="404.0" layoutY="177.0" mnemonicParsing="false" text="Cappaccino ($2.00)" toggleGroup="$group2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="regularTextField" layoutX="618.0" layoutY="122.0" onKeyPressed="#onKey" prefHeight="25.0" prefWidth="105.0" text="0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="capTextField" layoutX="618.0" layoutY="171.0" onKeyPressed="#onKey" prefHeight="25.0" prefWidth="105.0" text="0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <RadioButton fx:id="laitRadioButton" layoutX="405.0" layoutY="229.0" mnemonicParsing="false" text="Cafe Au Lait ($1.75)" toggleGroup="$group2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="laitTextField" layoutX="618.0" layoutY="223.0" onKeyPressed="#onKey" prefHeight="25.0" prefWidth="105.0" text="0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="634.0" layoutY="88.0" text="Quantity:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="412.0" layoutY="305.0" text="Price Summary:" textFill="#2810e0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="411.0" layoutY="361.0" text="Subtotal">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="412.0" layoutY="412.0" text="Sales Tax (13%)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="412.0" layoutY="457.0" text="Total">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="subTotalLabel" layoutX="600.0" layoutY="364.0" text="\$0.00">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="taxLabel" layoutX="601.0" layoutY="415.0" text="\$0.00">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalLabel" layoutX="601.0" layoutY="460.0" text="\$0.00">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="checkButton" layoutX="203.0" layoutY="541.0" mnemonicParsing="false" onAction="#onPrintToFilesButton" text="Print Receipt To File">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="resetButton" layoutX="576.0" layoutY="541.0" mnemonicParsing="false" onAction="#onResetButton" text="Reset">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="434.0" layoutY="541.0" mnemonicParsing="false" onAction="#onCalculateButton" text="Calculate">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitButton" layoutX="690.0" layoutY="541.0" mnemonicParsing="false" onAction="#onExitButton" text="Exit" textFill="#dd0c0c">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="printerButton" layoutX="20.0" layoutY="541.0" mnemonicParsing="false" onAction="#onPrinterButton" text="Print To Printer">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <MenuBar layoutX="2.0" layoutY="2.0" prefHeight="25.0" prefWidth="764.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Print Receipt">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onPrintToFilesButton" text="Print To Files" />
+                  <MenuItem mnemonicParsing="false" onAction="#onPrinterButton" text="Print To Printer" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Menu">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onCalculateButton" text="Calculate Total" />
+                  <MenuItem mnemonicParsing="false" onAction="#onResetButton" text="Reset" />
+                  <MenuItem mnemonicParsing="false" onAction="#onExitButton" text="Exit" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
